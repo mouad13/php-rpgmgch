@@ -15,11 +15,17 @@ $NewClient->setEmail('2');
 $NewClient->setDate('2');
 
 $NewClient2 = new Client();
-$NewClient->setID('3');
-$NewClient->setEmail('3');
-$NewClient->setDate('3');
+$NewClient2->setID('3');
+$NewClient2->setEmail('3');
+$NewClient2->setDate('3');
 
-var_dump($NewClient2);
+
+return [
+$NewClient,
+$NewClient2,
+];
+
 var_dump($NewClient);
+var_dump($NewClient2);
 
 ?>
