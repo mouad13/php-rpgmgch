@@ -1,6 +1,7 @@
 <?php
 // STEP 1 :
 
+require('client.php');
 class User
 {
 	private $_id = 'lolo';
@@ -36,12 +37,10 @@ class User
 
 }
 
-$NewUser = new User();
-$NewUser->setId('koko');
-$NewUser->setEmail('toto@koko.lo');
-$NewUser->setDate('11/11/11');
+
+
 
 //$test = $NewUser->getID(); 
 
-var_dump($NewUser);
+//var_dump($NewUser);
 ?>
