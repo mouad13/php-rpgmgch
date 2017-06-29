@@ -3,9 +3,9 @@
 
 class User
 {
-	private $_id;
-	private $_email;
-	private $_createDate;
+	private $_id = 'lolo';
+	private $_email = 'mouad@rifai.ao';
+	private $_createDate = '00/00/00';
 
 
 	public function getID(){
@@ -16,12 +16,32 @@ class User
 		$this->_id = $_id;
 	}
 
+	
+	public function getEmail(){
+		return $this->_email;
+	}
+
+	public function setEmail($_email){
+		$this->_email = $_email;
+	}
+
+
+	public function getDate(){
+		return $this->_createDate;
+	}
+
+	public function setDate($_Date){
+		$this->_createDate = $_Date;
+	}
+
 }
 
 $NewUser = new User();
 $NewUser->setId('koko');
+$NewUser->setEmail('toto@koko.lo');
+$NewUser->setDate('11/11/11');
 
-$test = $NewUser->getID(); 
+//$test = $NewUser->getID(); 
 
-var_dump($test);
+var_dump($NewUser);
 ?>
